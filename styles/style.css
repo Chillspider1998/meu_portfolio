@@ -11,17 +11,30 @@
 body {
     /* height: 100vh;  vh ==> viewport height, definindo o tamanho da tela para 100% do viewport height */
     box-sizing: border-box; /* border-box ==> ajusta o conteudo filho sempre dentro do conteudo pai */
-    background-color: black;  /* background-color: altera a cor de fundo do corpo da pagina */
-    color: #F2F2F2; /* color: altera somente a cor do texto no corpo da pagina */
+    background-color: #000000;  /* background-color: altera a cor de fundo do corpo da pagina */
+    color: #F2F0D8; /* color: altera somente a cor do texto no corpo da pagina */
 }
-/* titulo principal */
-.titulo-destaque {
-    color: #34E3DA;
+
+.cabecalho {
+    padding: 2% 0% 0% 10%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #2B678C;
+    text-decoration: none;
 }
 
 /* <main> */
 .apresentacao {
-    padding: 8% 10%;
+    padding: 5% 10%;
     display: flex;  /* Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. */
     align-items: center; /* alinhando os intens da tag pai no centro */
     justify-content: space-between; /* deixando um espaco entre os elementos do pai. */
@@ -37,6 +50,11 @@ body {
 .apresentacao__conteudo__titulo {
     font-size: 36px;
     font-family: "Krona One", sans-serif;
+}
+
+/* titulo principal */
+.titulo-destaque {
+    color: #2B678C;
 }
 
 .apresentacao__conteudo__paragrafo {
@@ -70,10 +88,10 @@ body {
     font-size: 24px;
     padding: 21.5px 0px; /* o primeiro valor altera o padding vertical (padding top e bottom) e o segundo o padding horizontal (left e right) */
     text-decoration: none;
-    color: #F2F2F2;
+    color: #F2F0D8;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    border: 2px solid #34E3DA; /* valor1 => indica a espessura da borda, valor2=> indica o tipo da borda, valor3 => a cor da borda */
+    border: 2px solid #2B678C; /* valor1 => indica a espessura da borda, valor2=> indica o tipo da borda, valor3 => a cor da borda */
 }
 
 .apresentacao__links__botao:hover {
@@ -86,11 +104,21 @@ body {
 }
 /* rodape da pagina */
 .rodape {
-    color: #26211D;
-    background-color: #34E3DA;
+    color: #F2F0D8;
+    background-color: #2B678C;
     padding: 24px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 400;
+}
+
+/* stylo da lista pagina curriculo */
+.apresentacao__conteudo__paragrafo a {
+    text-decoration: none;
+    color: #2B678C;
+}
+
+.apresentacao__conteudo__paragrafo a:hover {
+    font-size: 25px;
 }
