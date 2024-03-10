@@ -1,0 +1,96 @@
+/* importando as fontes do google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+* {   /* resetando css padrao, o asterisco indica todos os elementos da pagina */
+    margin: 0;  /* espaco em volta da borda */
+    padding: 0; /* espaco entre a borda e o conteudo */
+}
+
+/* corpo da nossa pagina */
+body {
+    /* height: 100vh;  vh ==> viewport height, definindo o tamanho da tela para 100% do viewport height */
+    box-sizing: border-box; /* border-box ==> ajusta o conteudo filho sempre dentro do conteudo pai */
+    background-color: black;  /* background-color: altera a cor de fundo do corpo da pagina */
+    color: #F2F2F2; /* color: altera somente a cor do texto no corpo da pagina */
+}
+/* titulo principal */
+.titulo-destaque {
+    color: #34E3DA;
+}
+
+/* <main> */
+.apresentacao {
+    padding: 8% 10%;
+    display: flex;  /* Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. */
+    align-items: center; /* alinhando os intens da tag pai no centro */
+    justify-content: space-between; /* deixando um espaco entre os elementos do pai. */
+}
+/* <section> */
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex; /* o display: flex alinha por padrão os itens em uma linha */
+    flex-direction: column;
+    gap: 40px; /* o gap cria um espaco entre os itens do nosso container (seja uma div, um main, section, etc) */
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+/* div com subtitulo e botoes */
+.apresentacao__links {
+    display: flex;
+    flex-direction: column; /* o flex-direction: column alinha os itens em coluna (um abaixo do outro) */
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+/* aceese minhas redes */
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+/* botoes (links) */
+.apresentacao__links__botao {
+    /* background-color: #34E3DA; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 21.5px 0px; /* o primeiro valor altera o padding vertical (padding top e bottom) e o segundo o padding horizontal (left e right) */
+    text-decoration: none;
+    color: #F2F2F2;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border: 2px solid #34E3DA; /* valor1 => indica a espessura da borda, valor2=> indica o tipo da borda, valor3 => a cor da borda */
+}
+
+.apresentacao__links__botao:hover {
+    background-color: #26211D;
+    width: 400px;
+}
+/* minha foto */
+.profile {
+    border-radius: 3%;
+}
+/* rodape da pagina */
+.rodape {
+    color: #26211D;
+    background-color: #34E3DA;
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
