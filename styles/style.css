@@ -1,6 +1,16 @@
 /* importando as fontes do google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+/* criando variaveis em CSS */
+:root {
+    --cor-background: #040D12;
+    --cor-font: #93B1A6;
+    --cor-destaque: #183D3D;
+    --cor-hover: #183D3D;
+
+    --font-primaria: "Krona One", sans-serif;
+    --font-secundaria: "Montserrat", sans-serif;
+}
 
 * {   /* resetando css padrao, o asterisco indica todos os elementos da pagina */
     margin: 0;  /* espaco em volta da borda */
@@ -11,8 +21,8 @@
 body {
     /* height: 100vh;  vh ==> viewport height, definindo o tamanho da tela para 100% do viewport height */
     box-sizing: border-box; /* border-box ==> ajusta o conteudo filho sempre dentro do conteudo pai */
-    background-color: #000000;  /* background-color: altera a cor de fundo do corpo da pagina */
-    color: #F2F0D8; /* color: altera somente a cor do texto no corpo da pagina */
+    background-color: var(--cor-background);  /* utilizando as variaveis */
+    color: var(--cor-font);
 }
 
 .cabecalho {
@@ -25,10 +35,10 @@ body {
 }
 
 .cabecalho__menu__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 24px;
     font-weight: 600;
-    color: #2B678C;
+    color: var(--cor-destaque);
     text-decoration: none;
 }
 
@@ -49,17 +59,17 @@ body {
 
 .apresentacao__conteudo__titulo {
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--font-primaria);
 }
 
 /* titulo principal */
 .titulo-destaque {
-    color: #2B678C;
+    color: var(--cor-destaque);
 }
 
 .apresentacao__conteudo__paragrafo {
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-secundaria);
     font-weight: 400;
 }
 /* div com subtitulo e botoes */
@@ -72,7 +82,7 @@ body {
 }
 /* aceese minhas redes */
 .apresentacao__links__subtitulo {
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--font-primaria);
     font-weight: 400;
     font-size: 24px;
 }
@@ -88,15 +98,15 @@ body {
     font-size: 24px;
     padding: 21.5px 0px; /* o primeiro valor altera o padding vertical (padding top e bottom) e o segundo o padding horizontal (left e right) */
     text-decoration: none;
-    color: #F2F0D8;
-    font-family: "Montserrat", sans-serif;
+    color: var(--cor-font);
+    font-family: var(--font-secundaria);
     font-weight: 600;
-    border: 2px solid #2B678C; /* valor1 => indica a espessura da borda, valor2=> indica o tipo da borda, valor3 => a cor da borda */
+    border: 2px solid var(--cor-destaque); /* valor1 => indica a espessura da borda, valor2=> indica o tipo da borda, valor3 => a cor da borda */
 }
 
 .apresentacao__links__botao:hover {
-    background-color: #26211D;
-    width: 400px;
+    background-color: var(--cor-hover);
+    width: 390px;
 }
 /* minha foto */
 .profile {
@@ -104,11 +114,11 @@ body {
 }
 /* rodape da pagina */
 .rodape {
-    color: #F2F0D8;
-    background-color: #2B678C;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-destaque);
     padding: 24px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 24px;
     font-weight: 400;
 }
@@ -116,7 +126,7 @@ body {
 /* stylo da lista pagina curriculo */
 .apresentacao__conteudo__paragrafo a {
     text-decoration: none;
-    color: #2B678C;
+    color: var(--cor-destaque);
 }
 
 .apresentacao__conteudo__paragrafo a:hover {
