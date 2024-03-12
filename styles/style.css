@@ -48,6 +48,7 @@ body {
     display: flex;  /* Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. */
     align-items: center; /* alinhando os intens da tag pai no centro */
     justify-content: space-between; /* deixando um espaco entre os elementos do pai. */
+    gap: 82px;
 }
 /* <section> */
 .apresentacao__conteudo {
@@ -139,3 +140,18 @@ body {
     font-weight: 400;
 }
 
+@media ( (min-width: 480px) and (max-width: 800px) ) {
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+}
