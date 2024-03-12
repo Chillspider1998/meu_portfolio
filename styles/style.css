@@ -36,7 +36,7 @@ body {
 
 .cabecalho__menu__link {
     font-family: var(--font-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-destaque);
     text-decoration: none;
@@ -51,14 +51,14 @@ body {
 }
 /* <section> */
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex; /* o display: flex alinha por padrão os itens em uma linha */
     flex-direction: column;
     gap: 40px; /* o gap cria um espaco entre os itens do nosso container (seja uma div, um main, section, etc) */
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--font-primaria);
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 .apresentacao__conteudo__paragrafo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--font-secundaria);
     font-weight: 400;
 }
@@ -84,19 +84,18 @@ body {
 .apresentacao__links__subtitulo {
     font-family: var(--font-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 /* botoes (links) */
 .apresentacao__links__botao {
-    /* background-color: #34E3DA; */
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 10px;
-    font-size: 24px;
-    padding: 21.5px 0px; /* o primeiro valor altera o padding vertical (padding top e bottom) e o segundo o padding horizontal (left e right) */
+    font-size: 1.5rem;
+    padding: 1.35rem 0rem; /* o primeiro valor altera o padding vertical (padding top e bottom) e o segundo o padding horizontal (left e right) */
     text-decoration: none;
     color: var(--cor-font);
     font-family: var(--font-secundaria);
@@ -106,21 +105,7 @@ body {
 
 .apresentacao__links__botao:hover {
     background-color: var(--cor-hover);
-    width: 390px;
-}
-/* minha foto */
-.profile {
-    border-radius: 3%;
-}
-/* rodape da pagina */
-.rodape {
-    color: var(--cor-secundaria);
-    background-color: var(--cor-destaque);
-    padding: 24px;
-    text-align: center;
-    font-family: var(--font-secundaria);
-    font-size: 24px;
-    font-weight: 400;
+    width: 24.4rem;
 }
 
 /* stylo da lista pagina curriculo */
@@ -130,5 +115,27 @@ body {
 }
 
 .apresentacao__conteudo__paragrafo a:hover {
-    font-size: 25px;
+    font-size: 1.6rem;
 }
+
+/* minha foto */
+.apresentacao__imagem {
+    border-radius: 3%;
+    width: 50%;
+}
+
+.apresentacao__links__botao img {
+    width: 15%;
+}
+
+/* rodape da pagina */
+.rodape {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-destaque);
+    padding: 1.5rem;
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
